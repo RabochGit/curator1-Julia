@@ -10,7 +10,7 @@ def main(message):
 
 @bot.message_handler(commands=['first_message'])
 def main(message):
-    bot.send_message(message.chat.id, 'Сегодня у тебя будет *замечательный* день', pars_mode='Markdown')
+    bot.send_message(message.chat.id, 'Сегодня у тебя будет *замечательный* день')
 
 
 @bot.message_handler(commands=['second_message'])
@@ -20,7 +20,7 @@ def main(message):
 
 @bot.message_handler(commands=['third_message'])
 def main(message):
-    bot.send_message(message.chat.id, 'Удачного дня!', pars_mode='Markdown')
+    bot.send_message(message.chat.id, 'Удачного дня!')
 
 
 bot.infinity_polling()
